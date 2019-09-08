@@ -1,0 +1,51 @@
+<html>
+<head>
+
+        <style type="text/css">
+         body{
+            background-color: rgb(145, 38, 38);
+        }
+                .tim {
+                    font-style: italic;
+                    margin-top: 500px;
+                    margin-bottom: 300px;
+                    margin-left: 40%;
+                    color:aquamarine;
+                    text-shadow: 3px 2px green;
+            border:1 px ;
+            font-size: 80px;
+                   }
+            
+
+            
+
+                }
+            </style>
+            
+</head>
+<body>
+
+
+    <div id="Mydigi-time" class="tim"></div>
+   
+  <script type="text/javascript">
+
+    function digitime(){
+    var date= new Date();
+    var h =date.getHours();
+    var m =date.getMinutes();
+    var s =date.getSeconds();
+
+  
+
+    var time=h + ":" + m + ":" + s;
+    document.getElementById("Mydigi-time").innerText = time;
+    document.getElementById("Mydigi-time").textcontent = time;
+ setTimeout(digitime, 1000);
+}
+digitime();
+  </script>
+
+
+</body>
+</html>
